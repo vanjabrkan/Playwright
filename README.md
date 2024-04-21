@@ -1,9 +1,9 @@
-#Playwright Automation Tool
+# Playwright Automation Tool
 
 Welcome to the Playwright Automation Project! 
 This project is a culmination of the learnings and practical exercises from the YouTube course "Playwright with Javascript" by Sdetpavan. In this course, we've delved into the world of automated testing using Playwright, a powerful tool for browser automation.
 
-##Table of Contents
+## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Examples](#Examples)
@@ -16,3 +16,5 @@ This project is a culmination of the learnings and practical exercises from the 
     ```bash
     npm init playwright@latest
     ```
+
+## Usage
