@@ -14,12 +14,12 @@ test('Locating Multiple Elements',async ({page})=>{
     */
 
     //Locate all the products displayed on the home page
-    //page.waitForSelector("//div[@id='tbodyid']//h4/a")
+    await page.waitForSelector("//div[@id='tbodyid']//h4/a")
     const products= await page.$$("//div[@id='tbodyid']//h4/a")
     for (const product of products)
     {
         const productName= await product.textContent();
         console.log(productName);
     }
-    //needs to be checked !!
+   await page.close();
 })
