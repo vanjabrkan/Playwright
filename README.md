@@ -42,6 +42,6 @@ To use this project, follow the steps below:
     await page.getByRole('button', { name: 'Log in' }).click();
     await page.getByRole('link', { name: 'Log out' }).click();
     });
-    ```
+    
 ## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
