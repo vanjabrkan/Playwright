@@ -29,7 +29,7 @@ To use this project, follow the steps below:
 3. View test results and logs in the console output.
 
 ## Examples
-    ```javascript
+```javascript
     import { test, expect } from '@playwright/test';
 
     test('test', async ({ page }) => {
@@ -43,7 +43,7 @@ To use this project, follow the steps below:
     await page.getByRole('link', { name: 'Log out' }).click();
     await page.close();
     })();
-    ```
+```
     
 ## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
