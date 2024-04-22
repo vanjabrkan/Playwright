@@ -41,7 +41,9 @@ To use this project, follow the steps below:
     await page.locator('#loginpassword').fill('test@123');
     await page.getByRole('button', { name: 'Log in' }).click();
     await page.getByRole('link', { name: 'Log out' }).click();
-    });
+    await page.close();
+    })();
+    ```
     
 ## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
