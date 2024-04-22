@@ -29,7 +29,7 @@ To use this project, follow the steps below:
 3. View test results and logs in the console output.
 
 ## Examples
-    ```bash
+    ```javascript
     import { test, expect } from '@playwright/test';
 
     test('test', async ({ page }) => {
