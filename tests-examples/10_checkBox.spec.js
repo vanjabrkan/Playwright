@@ -2,21 +2,22 @@ const {test, expect} = require('@playwright/test')
 
 test('Handle Check Box', async ({page})=>{
 
-    await page.goto('https://app.endtest.io/guides/docs/how-to-test-checkboxes/');
+    await page.goto('https://testautomationpractice.blogspot.com/');
 
     //Single check box
-    await (page).locator("//input[@id='pet1' and @type='checkbox']").check(); 
-    //await page.check("//input[@id='pet1' and @type='checkbox']")
+    await (page).locator("//input[@id='sunday' and @type='checkbox']").check(); 
+    //await page.check("//input[@id='sunday' and @type='checkbox']")
 
-    await expect(await (page).locator("//input[@id='pet1' and @type='checkbox']")).toBeChecked();
-    await expect(await (page).locator("//input[@id='pet1' and @type='checkbox']").isChecked()).toBeTruthy(); 
+    await expect(await (page).locator("//input[@id='sunday' and @type='checkbox']")).toBeChecked();
+    await expect(await (page).locator("//input[@id='sunday' and @type='checkbox']").isChecked()).toBeTruthy(); 
 
-    await expect(await (page).locator("//input[@id='pet3' and @type='checkbox']").isChecked()).toBeFalsy(); 
+    await expect(await (page).locator("//input[@id='friday' and @type='checkbox']").isChecked()).toBeFalsy(); 
     
     //Multiple checkboxes
     const checkboxesLocators = [
-                                "//input[@id='pet1' and @type='checkbox']",
-                                "//input[@id='pet3' and @type='checkbox']"
+                                "//input[@id='sunday' and @type='checkbox']",
+                                "//input[@id='saturday' and @type='checkbox']",
+                                "//input[@id='friday' and @type='checkbox']"
                                ];
 
     //select multiple checkboxes
